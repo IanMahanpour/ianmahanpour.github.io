@@ -1,0 +1,252 @@
+html {
+ height: 100vh;
+}
+body {
+  height: 100vh;
+}
+h1 {
+  font-size: 46px;
+  font-family: Goudy;
+}
+#header h2 {
+  margin-top:-25px;
+  font-size: 17px;
+}
+h2 table, td {
+  border-right: 2px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+h2 table, td.lastListItem {
+  border-right: 0px;
+}
+#container {
+  border-collapse: collapse;
+  display: inline-grid;
+  grid-template-columns: 20% 80%;
+  padding:0;
+  margin:0;
+  font-family: 'Courier', serif;
+  width:100%;
+  background: #ffffff;
+}
+#content {
+  display: flex;
+  flex-direction: column;
+  border-collapse: collapse;
+  align-self: stretch;
+}
+#home {
+  background: #faf0e6;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:column;
+  justify-content:center;
+  align-content: center;
+  height: 100%;
+}
+.homeSection {
+  display: flex;
+   flex-wrap: wrap;
+  justify-content:center;
+  align-content: center;
+  
+}
+.homeText {
+  padding:30px;
+  width: 350px;
+}
+.homeTitle {
+  text-decoration:underline;
+  padding:40px;
+  text-align: center;
+}
+.post {
+  display:flex;
+  width: 400px;
+  align-items:center;
+  margin: 30px;
+  padding: 20px;
+}
+.post a {
+  text-decoration:none;
+  color:inherit;
+}
+.postBig {
+  display:flex;
+  width: 800px;
+  height: 200px;
+  align-items:center;
+  margin: 15px;
+  padding: 50px;
+}
+.homeSection .post:hover {
+  background: #fefefe;
+}
+.postContainer {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-content: center;
+  width: 100%;
+}
+.post.design {
+  width: 600px;
+  height: 600px;
+  display:flex;
+  flex-direction: column;
+ justify-content:center;
+  margin: 20px;
+  padding: 15px;
+}
+.post.music {
+  width: 600px;
+  height: 600px;
+  display:flex;
+  flex-direction: column;
+   justify-content:center;
+  margin: 30px;
+  padding: 5px;
+}
+.postImage {
+  width:200px;
+  height:200px;
+  object-fit: scale-down;
+  padding: 20px;
+}
+.postImage.design {
+    width: 70%;
+    height: 70%;
+}
+.postImage.music {
+  width: 60%;
+    height: 60%;
+}
+#homeImage {
+  display:flex;
+  align-items:center;
+  height:100%;
+}
+.substack {
+  width:100%;
+  height:100%;
+}
+#header {
+  background: #faf0e6;
+  /*background-image:url(https://cdn.glitch.global/9509c33c-224f-41f2-b2c6-0a72de093c3d/website%20cover%20image%20ver%201.jpg?v=1704152505584); */
+  text-align: center;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  border: 5px solid black;
+  border-left: 0;
+  border-collapse: collapse;
+}
+#nav {
+  align-self: stretch;
+  background: #faf0e6;
+  border: 5px solid black;
+  border-collapse: collapse;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  
+  
+}
+#nav ul {
+  list-style-type: none;
+  padding: 50px;
+  font-weight: bold;
+  font-family: Goudy;
+  font-size: 46px;
+}
+#nav ul li {
+  margin: 20px;
+}
+#nav ul li:hover {
+  background-color: #ffffff;
+}
+#nav a {
+  color:inherit;
+  text-decoration: none;
+}
+#nav h1 {
+  font-size:36px;
+}
+#navPhone {
+  display:none;
+}
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-collapse: collapse;
+  background-color:#faf0e6;
+  /*background-image:url(https://cdn.glitch.global/9509c33c-224f-41f2-b2c6-0a72de093c3d/website%20cover%20image%20ver%201.jpg?v=1704152505584); */
+  border: 5px solid black;
+  border-left: 0;
+}
+#footer img {
+  width:60px;
+  margin: 20px;
+}
+#footer img.carrot {
+  width: 400px;
+  
+}
+@font-face {
+  font-family: Goudy;
+  src: url(https://cdn.glitch.global/9509c33c-224f-41f2-b2c6-0a72de093c3d/Goudy%20Heavyface%20Std%20Regular.otf?v=1703994173138);
+}
+@media (max-width: 1270px) {
+  #container {
+    grid-template-columns: 100%;
+  }
+  #nav {
+    display:none;
+  }
+  #navPhone {
+  background: #faf0e6;
+  border: 5px solid black;
+  border-collapse: collapse;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  }
+  #navPhone ul {
+  list-style-type: none;
+  padding: 5px;
+  font-weight: bold;
+  font-family: Goudy;
+  font-size: 46px;
+}
+#navPhone ul li {
+  margin: 20px;
+}
+#navPhone a {
+  color:inherit;
+  text-decoration: none;
+  }
+.carrot {
+    display:none;
+  }
+  #header {
+     border: 5px solid black;
+  }
+  #footer {
+    border: 5px solid black;
+    border-top: 0;
+  }
+  .post {
+    width:100%;
+    flex-direction: column;
+    margin:10px;
+  }
+  .postImage {
+    height:100%;
+   
+  }
+}
